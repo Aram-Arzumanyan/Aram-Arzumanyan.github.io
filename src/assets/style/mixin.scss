@@ -1,0 +1,5 @@
+@mixin screen($widt){ 
+    @media (max-width:$widt){ 
+        @content; 
+    } 
+}

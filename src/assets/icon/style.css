@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?nq3hsi');
+  src:  url('fonts/icomoon.eot?nq3hsi#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nq3hsi') format('truetype'),
+    url('fonts/icomoon.woff?nq3hsi') format('woff'),
+    url('fonts/icomoon.svg?nq3hsi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bathtub:before {
+  content: "\e903";
+}
+.icon-snapchat:before {
+  content: "\e908";
+}
+.icon-cc-amex:before {
+  content: "\e906";
+}
+.icon-cc-paypal:before {
+  content: "\e907";
+}
+.icon-cutlery:before {
+  content: "\e904";
+}
+.icon-television:before {
+  content: "\e905";
+}
+.icon-child:before {
+  content: "\e901";
+}
+.icon-location-hotel:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e900";
+}
+.icon-connection:before {
+  content: "\e91b";
+}
+.icon-credit-card:before {
+  content: "\e93f";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-calendar:before {
+  content: "\e953";
+}
+.icon-glass2:before {
+  content: "\e9a1";
+}
+.icon-accessibility:before {
+  content: "\e9b2";
+}
+.icon-menu3:before {
+  content: "\e9bf";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}

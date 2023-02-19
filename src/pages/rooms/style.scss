@@ -1,0 +1,48 @@
+@import'../../assets/style/mixin.scss'; 
+ .room{
+    width: 96%;
+    margin: 0 auto;
+    padding: 30px 0;
+    
+
+    .register_room{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+       .inp_block{
+        width: 100%;
+        input{
+            width:90%;
+            height: 40px;
+        }
+      
+    }
+    button{
+        padding: 10px 50px;
+        background-color: black;
+        color: aliceblue;
+        border: none;
+        &:hover{
+            background-color: #ccc;
+            color: black;
+            cursor: pointer;
+           
+        }
+    }
+    @include screen(820px){
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    @include screen(820px){
+        flex-direction: column;
+    }
+}
+}

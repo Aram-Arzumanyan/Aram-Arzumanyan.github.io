@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
+import "../src/assets/style/global.scss";
+import Loader from "./component/loader";
+import Footer from "./pages/footer";
+import Header from "./pages/header";
+import Routing from "./routing";
+import useLoader from "./useLoader";
 
 function App() {
+  let MyRef = useRef();
+  let [scrl, setScrl] = useState(0);
+  window.onscroll = () => {
+    setScrl(Math.floor(window.scrollY));
+  };
+  useEffect(() => {
+    if (scrl >= 100) {
+      MyRef.current.style.display = "flex";
+    } else if (scrl <= 99) {
+      MyRef.current.style.display = "none";
+    }
+  }, [scrl]);
+
+  let location = useLocation();
+  let [s, setS] = useState(false);
+  const { loading } = useLoader();
+  useEffect(() => {
+    setS(false);
+  }, [location.pathname]);
+  console.log(s);
+  if (loading) {
+    return <Loader />;
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App G-container"
+      onClick={() => {
+        setS(false);
+      }}
+    >
+      <Header s={s} setS={setS} />
+      <Routing />
+      <Footer/>
+      <a ref={MyRef} className="myBtn" href="#header">
+        To Top
+      </a>
     </div>
   );
 }

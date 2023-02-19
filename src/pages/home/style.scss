@@ -1,0 +1,75 @@
+@import "../../assets/style/mixin.scss";
+.hotel {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+  .block {
+    width: 44%;
+    height: 200px;
+    margin-left: 10px;
+
+    @include screen(820px) {
+      width: 98%;
+      margin: 0 auto;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hotel_name {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-left: 10px;
+      background-color: red;
+      color: white;
+      font-size: 35px;
+    }
+
+    .register_hotel {
+      width: 100%;
+      height: 100%;
+      background-color: aliceblue;
+      display: flex;
+      justify-content: space-between;
+
+      .regis_form {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+        input {
+          width: 100%;
+          height: 40px;
+        }
+      }
+      @include screen(820px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .search {
+      padding: 8px 20px;
+      color: aliceblue;
+      background-color: #8d8b8b;
+      border: none;
+      font-size: 18px;
+      &:hover {
+        background-color: #ccc;
+        color: black;
+        cursor: pointer;
+      }
+      .icon-search {
+        padding-right: 10px;
+      }
+    }
+  }
+}

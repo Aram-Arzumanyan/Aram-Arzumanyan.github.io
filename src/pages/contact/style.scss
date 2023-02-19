@@ -1,0 +1,83 @@
+.Contact {
+  width: 100%;
+  padding-top: 30px;
+
+  .black_bar {
+    width: 100%;
+    height: 35vh;
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height: 26px;
+   margin-bottom: 20px;
+
+    .title {
+      padding-left: 30px;
+    }
+
+    color: aliceblue;
+    &:hover {
+      opacity: 1;
+    }
+
+    .form {
+      width: 80%;
+      padding-left: 30px;
+
+      input {
+        width: 100%;
+        height: 35px;
+      }
+
+      button {
+        padding: 10px 30px;
+        background-color: red;
+        color: aliceblue;
+        margin-top: 10px;
+
+        &:hover {
+          background-color: #ccc;
+          color: black;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .i{
+    color: red;
+    line-height: 1.5;
+  }
+.titl_contact{
+  width: 96%;
+    margin: auto;
+}
+  .inp_form{
+    width: 96%;
+    margin: auto;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+    input{
+      width: 100%;
+      height: 8vh;
+      padding-left: 10px;
+    }
+    button{
+      width: 200px;
+      padding: 10px 20px;
+      background-color: black;
+      color: aliceblue;
+      border: none;
+      &:hover{
+        cursor: pointer;
+        background-color: #ccc;
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@import "../../assets/style/mixin.scss";
+.icon {
+  display: none;
+  color: red;
+  font-size: 35px;
+  padding: 0 30px;
+  cursor: pointer;
+
+  @include screen(820px) {
+    display: block;
+  }
+}
+
+
+.nav {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  @include screen(820px) {
+    height: max-content;
+    background-color: #e7e4e4;
+    flex-direction: column;
+    display: none;
+  }
+
+  .content {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @include screen(820px) {
+      width: 100%;
+      flex-direction: column;
+    }
+    .menu {
+      width: 28%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include screen(820px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .menu_item {
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        height: 100%;
+
+        &:hover {
+          background-color: #928c8c;
+          color: black;
+          cursor: pointer;
+        }
+        @include screen(820px) {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 10px 30px;
+        }
+      }
+      .icon_div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        gap: 20px;
+        height: 100%;
+        background-color: red;
+        color: white;
+        font-size: 18px;
+
+        &:hover {
+          background-color: #928c8c;
+          color: black;
+          cursor: pointer;
+        }
+        @include screen(820px) {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .second_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+    background-color: #ccc;
+    color: black;
+    &:hover {
+      background-color: #7e7a7a;
+      cursor: pointer;
+    }
+    @include screen(820px) {
+      width: 100%;
+      height: 30px;
+    }
+  }
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  background-color: #e7e4e4;
+  flex-direction: column;
+  justify-content: space-between;
+}

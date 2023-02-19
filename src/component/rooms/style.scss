@@ -1,0 +1,35 @@
+@import'../../assets/style/mixin.scss';
+.room_block{
+
+    width: 33%;
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include screen(820px){
+        margin-top: 20px;
+        width: 100%;
+        
+    }
+.bg{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.btn{
+    width: 100%;
+   padding: 8px 0;
+   background-color: black;
+   color: white;
+   border: none;
+   &:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+   }
+}
+}
