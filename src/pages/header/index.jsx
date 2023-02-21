@@ -1,8 +1,16 @@
-import React, { useRef } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useRef } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./style.scss";
 
 export default function Header({s,setS}) {
+   let location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      Myref.current.style.display = "flex";
+    } else {
+      Myref.current.style.display = "none";
+    }
+  },[location.pathname]);
   let Myref = useRef();
   let navRef=useRef();
   function fu() {
@@ -24,11 +32,9 @@ e.stopPropagation()
             <NavLink
               to="/"
               className="icon_div"
-              onClick={() => {
-                Myref.current.style.display = "";
-              }}
+             
             >
-              {" "}
+              
               <span className="icon-location-hotel" />
               <h3>Home</h3>{" "}
             </NavLink>
@@ -38,18 +44,14 @@ e.stopPropagation()
             <NavLink
               className="menu_item"
               to="/about"
-              onClick={() => {
-                Myref.current.style.display = "none";
-              }}
+             
             >
               Abouth
             </NavLink>
             <NavLink
               to="contact"
               className="menu_item"
-              onClick={() => {
-                Myref.current.style.display = "none";
-              }}
+             
             >
               Contact
             </NavLink>
