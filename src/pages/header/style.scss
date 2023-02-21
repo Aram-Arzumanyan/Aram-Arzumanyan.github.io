@@ -42,10 +42,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
-      .active{
-        color:'red'
-      }
+
       @include screen(820px) {
         width: 100%;
         display: flex;
